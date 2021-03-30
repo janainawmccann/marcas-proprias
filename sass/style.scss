@@ -1,0 +1,28 @@
+/* Theme Description
+-------------------------------------------------
+
+	  Theme Name: Grupo BIG - Marcas Próprias
+	  Author: Janaina Guiotti
+	  Version: 1.0.0
+	  
+------------------------------------------------- 
+*/
+
+
+// Defult
+	@import 'variables';
+	@import 'mixins';
+	@import 'overlay';
+	@import 'common';
+	@import 'color';
+
+
+// Homepage1
+	@import 'header';
+	@import 'content';
+	@import 'footer';
+
+
+// Deful Element Page
+	@import 'extend';
+	@import 'elements';

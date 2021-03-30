@@ -1,0 +1,102 @@
+
+
+.slider-area{
+    margin-top: -1px;
+    padding-top: 100px;
+    @media #{$sm}{
+        padding-top: 120px;
+    }
+    @media #{$xs}{
+        padding-top: 120px;
+    }
+    // Slide Img
+    .single-slider{
+        .slider-cap-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            .slide__img{
+                width: 48%;
+                overflow: hidden;
+                @media #{$sm}{
+                    display: none;
+                }
+                @media #{$xs}{
+                    display: none;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+.slider-height {
+    // min-height: 830px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+// Arrow
+.slider-active {
+    & button{
+        &.slick-arrow {
+            position: absolute;
+            right:60px;
+            bottom: 0;
+            background: none;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            opacity: 1;
+            visibility: visible;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            background: #00444b;
+            @media #{$md}{
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                right:40px;
+            }
+            @media #{$sm}{
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                right:40px;
+            }
+            @media #{$xs}{
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                right:40px;
+            }
+            i{
+                font-size: 20px;
+                line-height: 60px;
+                color: #ffff;
+                @media #{$md}{
+                    line-height: 40px;
+                }
+                @media #{$sm}{
+                    line-height: 40px;
+                }
+                @media #{$xs}{
+                    line-height: 40px;
+                }
+            }
+        }
+        &.slick-next {
+            right: 0px;
+            background: #04dbec;
+        }
+    }
+    
+}
+

@@ -1,0 +1,25 @@
+{
+  "name": "marcas-proprias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janainawmccann/marcas-proprias.git"
+  },
+  "author": "Janaina Guiotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janainawmccann/marcas-proprias/issues"
+  },
+  "homepage": "https://github.com/janainawmccann/marcas-proprias#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
