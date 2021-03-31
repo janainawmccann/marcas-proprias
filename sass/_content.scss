@@ -1,32 +1,45 @@
-
-
 .slider-area{
-    margin-top: -1px;
-    padding-top: 100px;
     @media #{$sm}{
-        padding-top: 120px;
+       
     }
     @media #{$xs}{
-        padding-top: 120px;
+        
+    }
+    &--first {
+        background-color: $theme-color2;        
+    }
+    &--second {
+        background-image: -moz-linear-gradient( -230deg, rgb(167,123,80) 43%, rgb(182,142,92) 50%);
+        background-image: -webkit-linear-gradient( -230deg, rgb(167,123,80) 43%, rgb(182,142,92)  50%);
+        background-image: -ms-linear-gradient( -230deg, rgb(167,123,80) 43%, rgb(182,142,92)  50%);
+    }
+    &--third {
+        background-image: -moz-linear-gradient( -460deg, rgb(97,126,57) 0%, rgb(28,75,40) 50%);
+        background-image: -webkit-linear-gradient( -460deg, rgb(97,126,57) 0%, rgb(28,75,40)  50%);
+        background-image: -ms-linear-gradient( -460deg, rgb(97,126,57) 0%, rgb(28,75,40)  50%);
+    }
+    &--fourth {
+        background-color: $theme-color5!important;
+    }
+
+    .slick-slider {
+        background-color: $white_color;
     }
     // Slide Img
-    .single-slider{
+    .single-slider{        
         .slider-cap-wrapper{
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             .slide__img{
-                width: 48%;
+                width: 100%;
                 overflow: hidden;
-                @media #{$sm}{
-                    display: none;
-                }
-                @media #{$xs}{
-                    display: none;
-                }
-                img{
+                max-height: 550px;
+                img {
                     width: 100%;
+                    max-width: 330px;
+                    height: auto;
                 }
             }
         }
@@ -35,7 +48,7 @@
 }
 
 .slider-height {
-    // min-height: 830px;
+    //max-height: 550px;
     background-repeat:no-repeat ;
     background-position: center center;
     background-size: cover;
@@ -80,7 +93,7 @@
             i{
                 font-size: 20px;
                 line-height: 60px;
-                color: #ffff;
+                color: $white_color;
                 @media #{$md}{
                     line-height: 40px;
                 }
