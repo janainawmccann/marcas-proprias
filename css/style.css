@@ -108,7 +108,7 @@ h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
-  color: #0b1c39;
+  color: #bcbcbc;
   margin-top: 0px;
   font-style: normal;
   font-weight: 500;
@@ -1811,63 +1811,103 @@ header {
   background-repeat: no-repeat;
   background-color: #0269e2; }
   header .all-brands-area {
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 50px 0; }
+    header .all-brands-area .brands .brands-details h1 {
+      font-size: 47px;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 40px; }
+    header .all-brands-area .brands .brands-details h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff; }
+    header .all-brands-area .brands .brands-details h3 {
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0 20px; }
+      header .all-brands-area .brands .brands-details h3 a {
+        text-decoration: underline; }
+    header .all-brands-area .brands .brands-details p {
+      color: #fff; }
+    header .all-brands-area .brands-bg img {
+      width: 100%; }
 
 .slider-image {
   padding: 0 !important; }
   .slider-image img {
     width: 100%; }
 
-.slider-area .slider-details .arrow {
+.slider-area .slider-image .arrow {
   position: absolute;
   z-index: 1; }
-  .slider-area .slider-details .arrow--left {
+  .slider-area .slider-image .arrow--left {
     width: 0;
     height: 0;
-    left: -6%;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
-    bottom: 5%; }
-  .slider-area .slider-details .arrow--right {
+    bottom: 5%;
+    right: 0; }
+  .slider-area .slider-image .arrow--right {
     width: 0;
     height: 0;
-    right: -6%;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
-    bottom: 5%; }
+    bottom: 5%;
+    left: 0; }
+
+.slider-area .slider-details {
+  padding: 30px; }
+  .slider-area .slider-details h2 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px; }
+  .slider-area .slider-details h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px; }
 
 .slider-area--first {
   background-color: #a41923; }
-  .slider-area--first .slider-details .arrow--left {
+  .slider-area--first h2, .slider-area--first h3, .slider-area--first p {
+    color: #fff; }
+  .slider-area--first .slider-image .arrow--left {
     border-right: 30px solid #a41923; }
 
 .slider-area--second {
   background-image: -moz-linear-gradient(-230deg, #a77b50 43%, #b68e5c 50%);
   background-image: -webkit-linear-gradient(-230deg, #a77b50 43%, #b68e5c 50%);
   background-image: -ms-linear-gradient(-230deg, #a77b50 43%, #b68e5c 50%); }
+  .slider-area--second h2, .slider-area--second h3, .slider-area--second p {
+    color: #fff; }
   .slider-area--second .slider-details {
     background-color: #353535;
     color: #fff; }
-    .slider-area--second .slider-details .arrow--left {
-      border-right: 30px solid #353535; }
+  .slider-area--second .slider-image .arrow--left {
+    border-right: 30px solid #353535; }
 
 .slider-area--third {
   background-image: -moz-linear-gradient(-460deg, #617e39 0%, #1c4b28 50%);
   background-image: -webkit-linear-gradient(-460deg, #617e39 0%, #1c4b28 50%);
   background-image: -ms-linear-gradient(-460deg, #617e39 0%, #1c4b28 50%); }
+  .slider-area--third h2, .slider-area--third h3, .slider-area--third p {
+    color: #1c4b28; }
   .slider-area--third .slider-details {
     background-color: #dfd4c3;
     color: #1c4b28; }
-    .slider-area--third .slider-details .arrow--right {
-      border-left: 30px solid #dfd4c3; }
+  .slider-area--third .slider-image .arrow--right {
+    border-left: 30px solid #dfd4c3; }
 
 .slider-area--fourth {
   background-color: #368ecb !important; }
+  .slider-area--fourth h2, .slider-area--fourth h3, .slider-area--fourth p {
+    color: #fff; }
   .slider-area--fourth .slider-details {
     background-color: #368ecb;
     color: #fff; }
-    .slider-area--fourth .slider-details .arrow--right {
-      border-left: 30px solid #368ecb; }
+  .slider-area--fourth .slider-image .arrow--right {
+    border-left: 30px solid #368ecb; }
   .slider-area--fourth .slick-dots {
     display: none !important; }
 
@@ -1943,9 +1983,11 @@ header {
 
 .slick-dots {
   display: flex !important;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 10%; }
   .slick-dots li {
-    float: left; }
+    float: left;
+    padding: 2px; }
     .slick-dots li button {
       background-color: #5a5a5a;
       border: 1px solid #a3a3a3;
@@ -1978,11 +2020,13 @@ footer {
         footer .footer-area .container .stamp h4 {
           font-size: 16px;
           font-weight: 900;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          color: #000000; }
         footer .footer-area .container .stamp span {
           font-size: 14px;
           font-weight: 600;
-          text-decoration: underline; }
+          text-decoration: underline;
+          color: #000000; }
           footer .footer-area .container .stamp span i {
             font-size: 11px;
             padding-left: 4px; }

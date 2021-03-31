@@ -16,8 +16,7 @@ h4,
 h5,
 h6 {
 	font-family: $font_1;
-	color: #0b1c39;
-
+	color: $font_color1;
 	margin-top: 0px;
 	font-style: normal;
 	font-weight: 500;
@@ -26,8 +25,7 @@ h6 {
 p {
 	font-family:$font_1;
 	color: $font_color1;
-
-	font-size: 16px;
+	font-size: $tex-size;
 	line-height: 30px;
 	margin-bottom: 15px;
 	font-weight: normal;
