@@ -6,14 +6,12 @@
       $('#preloader-active').delay(450).fadeOut('slow');
     });
 
-/* 2. sticky And Scroll UP */
+/* 2. Scroll UP */
     $(window).on('scroll', function () {
       var scroll = $(window).scrollTop();
       if (scroll < 400) {
-        $(".header-sticky").removeClass("sticky-bar");
         $('#back-top').fadeOut(500);
       } else {
-        $(".header-sticky").addClass("sticky-bar");
         $('#back-top').fadeIn(500);
       }
     });
@@ -26,7 +24,7 @@
     });
   
 /* 3. MainSlider-1 */
-    // h1-hero-active
+    // slide active
     function mainSlider() {
       var BasicSlider = $('.slider-active');
       BasicSlider.on('init', function (e, slick) {

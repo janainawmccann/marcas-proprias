@@ -24,9 +24,6 @@
 // btn and Section color
 	$btn_bg: #0269e2;
 
-// Section Bg
-	$section_bg1: #0269e2;
-
 .white-bg{
 	background: #ffffff;
 }
@@ -41,6 +38,7 @@ $gray-color-2: #e7e7e7;
 
 $gray-color3:#cccccc;
 $white_color:#fff;
+$green_color: #1c4b28;
 
 
 // font color
@@ -52,7 +50,10 @@ $sidebar_bg: #e7e7e7;
 
 // bg
 $brand-bg: #0269e2;
-$testimonial-bg:#353535;
+$section_bg1: #a41923;
+$section_bg2:#353535;
+$section_bg3: #dfd4c3;
+$section_bg4: #368ecb;
 
 
 // Soft color
@@ -82,10 +83,6 @@ $blue-bg1:#00163e;
 .brand-bg{
 	background: $brand-bg;
 }
-.testimonial-bg{
-	background: $testimonial-bg;
-}
-
 
 /*--- color------*/
 .white-color {
