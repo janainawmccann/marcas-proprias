@@ -5,13 +5,7 @@
     }
 }
 
-.slider-area{
-    @media #{$sm}{
-       
-    }
-    @media #{$xs}{
-        
-    }
+.slider-area{    
     .slider-image {
         .arrow {
             position: absolute;
@@ -23,6 +17,12 @@
                 border-bottom: 30px solid transparent;                
                 bottom: 5%;
                 right: 0;
+                @media #{$sm}{
+                    display: none;
+                }
+                @media #{$xs}{
+                    display: none;
+                }
             }
             &--right {
                 width: 0;
@@ -30,7 +30,31 @@
                 border-top: 30px solid transparent;
                 border-bottom: 30px solid transparent;                
                 bottom: 5%;   
-                left: 0;             
+                left: 0;     
+                @media #{$sm}{
+                    display: none;
+                }
+                @media #{$xs}{
+                    display: none;
+                }        
+            }
+            &--up {
+                width: 0; 
+                height: 0; 
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                bottom: 0;
+                left: 44%;
+                right: 44%;                
+                @media #{$laptop}{
+                    display: none;
+                }
+                @media #{$lg}{
+                    display: none;
+                }
+                @media #{$md}{
+                    display: none;
+                }
             }
         }
     }
@@ -59,6 +83,9 @@
                 &--left {
                     border-right: 30px solid $section_bg1;
                 }
+                &--up {
+                    border-bottom: 30px solid $section_bg1;
+                }
             }
         }   
     }
@@ -77,6 +104,9 @@
             .arrow {
                 &--left {
                     border-right: 30px solid $section_bg2;
+                }
+                &--up {
+                    border-bottom: 30px solid $section_bg2;
                 }
             }
         }
@@ -97,6 +127,9 @@
                 &--right {
                     border-left: 30px solid $section_bg3;
                 }
+                &--up {
+                    border-bottom: 30px solid $section_bg3;
+                }
             }
         }
     }
@@ -113,6 +146,9 @@
             .arrow {
                 &--right {
                     border-left: 30px solid $section_bg4;
+                }
+                &--up {
+                    border-bottom: 30px solid $section_bg4;
                 }
             }
         }

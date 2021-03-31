@@ -1831,6 +1831,27 @@ header {
         text-decoration: underline; }
     header .all-brands-area .brands .brands-details p {
       color: #fff; }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      header .all-brands-area .brands .brands-details .brands-images .desktop {
+        display: none; } }
+    @media (max-width: 575px) {
+      header .all-brands-area .brands .brands-details .brands-images .desktop {
+        display: none; } }
+    @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+      header .all-brands-area .brands .brands-details .brands-images .mobile {
+        display: none; } }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      header .all-brands-area .brands .brands-details .brands-images .mobile {
+        display: none; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      header .all-brands-area .brands .brands-details .brands-images .mobile {
+        display: none; } }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      header .all-brands-area .brands-bg {
+        display: none; } }
+    @media (max-width: 575px) {
+      header .all-brands-area .brands-bg {
+        display: none; } }
     header .all-brands-area .brands-bg img {
       width: 100%; }
 
@@ -1849,6 +1870,12 @@ header {
     border-bottom: 30px solid transparent;
     bottom: 5%;
     right: 0; }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .slider-area .slider-image .arrow--left {
+        display: none; } }
+    @media (max-width: 575px) {
+      .slider-area .slider-image .arrow--left {
+        display: none; } }
   .slider-area .slider-image .arrow--right {
     width: 0;
     height: 0;
@@ -1856,6 +1883,29 @@ header {
     border-bottom: 30px solid transparent;
     bottom: 5%;
     left: 0; }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .slider-area .slider-image .arrow--right {
+        display: none; } }
+    @media (max-width: 575px) {
+      .slider-area .slider-image .arrow--right {
+        display: none; } }
+  .slider-area .slider-image .arrow--up {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    bottom: 0;
+    left: 44%;
+    right: 44%; }
+    @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+      .slider-area .slider-image .arrow--up {
+        display: none; } }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .slider-area .slider-image .arrow--up {
+        display: none; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .slider-area .slider-image .arrow--up {
+        display: none; } }
 
 .slider-area .slider-details {
   padding: 30px; }
@@ -1874,6 +1924,8 @@ header {
     color: #fff; }
   .slider-area--first .slider-image .arrow--left {
     border-right: 30px solid #a41923; }
+  .slider-area--first .slider-image .arrow--up {
+    border-bottom: 30px solid #a41923; }
 
 .slider-area--second {
   background-image: -moz-linear-gradient(-230deg, #a77b50 43%, #b68e5c 50%);
@@ -1886,6 +1938,8 @@ header {
     color: #fff; }
   .slider-area--second .slider-image .arrow--left {
     border-right: 30px solid #353535; }
+  .slider-area--second .slider-image .arrow--up {
+    border-bottom: 30px solid #353535; }
 
 .slider-area--third {
   background-image: -moz-linear-gradient(-460deg, #617e39 0%, #1c4b28 50%);
@@ -1898,6 +1952,8 @@ header {
     color: #1c4b28; }
   .slider-area--third .slider-image .arrow--right {
     border-left: 30px solid #dfd4c3; }
+  .slider-area--third .slider-image .arrow--up {
+    border-bottom: 30px solid #dfd4c3; }
 
 .slider-area--fourth {
   background-color: #368ecb !important; }
@@ -1908,6 +1964,8 @@ header {
     color: #fff; }
   .slider-area--fourth .slider-image .arrow--right {
     border-left: 30px solid #368ecb; }
+  .slider-area--fourth .slider-image .arrow--up {
+    border-bottom: 30px solid #368ecb; }
   .slider-area--fourth .slick-dots {
     display: none !important; }
 
@@ -2006,6 +2064,12 @@ footer {
   footer .footer-area {
     padding: 40px 0;
     background-color: #e7e7e7; }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      footer .footer-area .col-sm-12 {
+        padding: 0 !important; } }
+    @media (max-width: 575px) {
+      footer .footer-area .col-sm-12 {
+        padding: 0 !important; } }
     footer .footer-area .container {
       margin: 0 auto; }
       footer .footer-area .container .stamp {
@@ -2013,7 +2077,8 @@ footer {
         border-radius: 8px;
         padding: 10px 20px;
         margin: 0 5%;
-        align-items: center; }
+        align-items: center;
+        margin: 5px 0; }
         footer .footer-area .container .stamp img {
           max-width: 55px;
           margin-right: 15px; }

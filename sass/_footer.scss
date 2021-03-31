@@ -4,6 +4,16 @@ footer {
     .footer-area{
         padding: 40px 0;
         background-color: $gray-color-2;
+        @media #{$sm}{
+            .col-sm-12 {
+                padding: 0!important;
+            }
+        }
+        @media #{$xs}{
+            .col-sm-12 {
+                padding: 0!important;
+            }
+        }        
         .container {
             margin: 0 auto;
             .stamp {
@@ -12,6 +22,7 @@ footer {
                 padding: 10px 20px;
                 margin: 0 5%;
                 align-items: center;
+                margin: 5px 0;
                 img {
                     max-width: 55px;
                     margin-right: 15px;

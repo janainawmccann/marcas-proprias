@@ -31,9 +31,36 @@ header {
                 p {
                     color: $white_color;
                 }
+                .brands-images {
+                    .desktop {
+                        @media #{$sm}{
+                            display: none;
+                        }
+                        @media #{$xs}{
+                            display: none;
+                        }
+                    }
+                    .mobile {
+                        @media #{$laptop}{
+                            display: none;
+                        }
+                        @media #{$lg}{
+                            display: none;
+                        }
+                        @media #{$md}{
+                            display: none;
+                        }
+                    }
+                }
             }
         }
         .brands-bg {
+            @media #{$sm}{
+                display: none;
+            }
+            @media #{$xs}{
+                display: none;
+            }
             img {
                 width: 100%;
             }
