@@ -44,6 +44,9 @@ footer {
                     font-weight: 600;
                     text-decoration: underline;
                     color: $black;
+                    a {
+                        color: $black;
+                    }
                     i {
                         font-size: 11px;
                         padding-left: 4px;
