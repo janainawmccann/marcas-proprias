@@ -1,6 +1,12 @@
 footer {
     background-color: $gray-color;
     padding: 50px 0 0;
+    @media #{$sm}{
+        padding:0;
+    }
+    @media #{$xs}{
+        padding:0;
+    }  
     .footer-area{
         padding: 40px 0;
         background-color: $gray-color-2;
